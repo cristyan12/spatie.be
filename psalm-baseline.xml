@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.4.1@9fd7a7d885b3a216cff8dec9d8c21a132f275224">
+  <file src="app/Actions/AddPurchasedTagsToEmailListSubscriberAction.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>Subscriber::find($subscriber-&gt;id)</code>
+    </InvalidReturnStatement>
+  </file>
+  <file src="app/Actions/CreateLicenseAction.php">
+    <FalsableReturnStatement occurrences="1">
+      <code>Carbon::createFromFormat('Y-m-d H:i:s', '2038-01-19 00:00:00')</code>
+    </FalsableReturnStatement>
+    <UndefinedMagicPropertyFetch occurrences="3">
+      <code>$purchasable-&gt;id</code>
+      <code>$user-&gt;id</code>
+      <code>optional($purchase)-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Actions/HandlePurchaseAction.php">
+    <UndefinedMagicPropertyFetch occurrences="6">
+      <code>$purchasable-&gt;id</code>
+      <code>$purchasable-&gt;repository_access</code>
+      <code>$rayPurchasable-&gt;id</code>
+      <code>$user-&gt;email</code>
+      <code>$user-&gt;github_username</code>
+      <code>$user-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Actions/RestoreRepositoryAccessAction.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$user-&gt;github_username</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Actions/SubscribeUserToNewsletterAction.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$user-&gt;email</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Actions/UnsubscribeUserFromNewsletterAction.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$user-&gt;email</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Actions/UpdateVideoDetailsAction.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$video-&gt;vimeo_id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Console/Commands/GiftRayToSponsorsCommand.php">
+    <UndefinedMagicPropertyFetch occurrences="4">
+      <code>$purchasable-&gt;id</code>
+      <code>$user-&gt;email</code>
+      <code>$user-&gt;id</code>
+      <code>$user-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+    <UndefinedMethod occurrences="1">
+      <code>filter</code>
+    </UndefinedMethod>
+    <UndefinedPropertyFetch occurrences="1">
+      <code>$rayPurchasable-&gt;id</code>
+    </UndefinedPropertyFetch>
+  </file>
+  <file src="app/Console/Commands/ImportDocsFromRepositoriesCommand.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>always</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="app/Console/Commands/ImportInsightsCommand.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$insight-&gt;title</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Console/Commands/RevokeRepositoryAccessForExpiredLicensesCommand.php">
+    <UndefinedMagicPropertyAssignment occurrences="1">
+      <code>$user-&gt;github_username</code>
+    </UndefinedMagicPropertyAssignment>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$license-&gt;purchasable_id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Console/Commands/SyncPurchasesToEmailListCommand.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$purchase-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Console/Commands/UpdatePurchasablePricesCommand.php">
+    <UndefinedMagicPropertyFetch occurrences="2">
+      <code>$purchasable-&gt;id</code>
+      <code>$purchasable-&gt;price_in_usd_cents</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Api/Controllers/PriceController.php">
+    <UndefinedMagicPropertyFetch occurrences="3">
+      <code>$purchasable-&gt;discount_expires_at</code>
+      <code>$purchasable-&gt;discount_name</code>
+      <code>$purchasable-&gt;discount_percentage</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Api/Controllers/SatisAuthenticationController.php">
+    <MissingDocblockType occurrences="1"/>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>isMasterKey</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="app/Http/Api/Controllers/ShowLicenseController.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$license-&gt;expires_at</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Api/Requests/Activations/CreateActivationRequest.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>License::query()-&gt;firstWhere('key', $this-&gt;license_key)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>License</code>
+    </InvalidReturnType>
+  </file>
+  <file src="app/Http/Controllers/DownloadPurchasableController.php">
+    <InaccessibleProperty occurrences="1">
+      <code>$file-&gt;model</code>
+    </InaccessibleProperty>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$purchase-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Controllers/GitHubSocialiteController.php">
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>stateless</code>
+    </UndefinedInterfaceMethod>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$user-&gt;is_sponsor</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Controllers/GuidelinesController.php">
+    <InvalidArgument occurrences="1">
+      <code>$page</code>
+    </InvalidArgument>
+  </file>
+  <file src="app/Http/Controllers/ProfileController.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$user-&gt;email</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Controllers/RedirectGitHubAdClickController.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$repository-&gt;name</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Controllers/SeriesController.php">
+    <UndefinedMagicPropertyFetch occurrences="2">
+      <code>$series-&gt;description</code>
+      <code>$series-&gt;title</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Livewire/DomainComponent.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$license-&gt;domain</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Http/Livewire/RepositoriesComponent.php">
+    <UndefinedMagicMethod occurrences="4">
+      <code>highlighted</code>
+      <code>packages</code>
+      <code>projects</code>
+      <code>search</code>
+    </UndefinedMagicMethod>
+  </file>
+  <file src="app/Jobs/RandomizeAdsOnGitHubRepositoriesJob.php">
+    <ImplicitToStringCast occurrences="1">
+      <code>$ads-&gt;random()</code>
+    </ImplicitToStringCast>
+  </file>
+  <file src="app/Models/ConversionRate.php">
+    <InvalidReturnStatement occurrences="4">
+      <code>$roundedPriceInCents</code>
+      <code>$roundedPriceInCents</code>
+      <code>static::query()-&gt;firstWhere(['country_code' =&gt; $countryCode])</code>
+      <code>static::query()-&gt;firstWhere(['currency_code' =&gt; $currencyCode])</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="4">
+      <code>?self</code>
+      <code>?self</code>
+      <code>int</code>
+      <code>int</code>
+    </InvalidReturnType>
+  </file>
+  <file src="app/Models/Image.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$image-&gt;path</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Models/License.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$product-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+    <UndefinedThisPropertyFetch occurrences="5">
+      <code>$this-&gt;expires_at</code>
+      <code>$this-&gt;expires_at</code>
+      <code>$this-&gt;expires_at</code>
+      <code>$this-&gt;key</code>
+      <code>$this-&gt;key</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="app/Models/Member.php">
+    <UndefinedThisPropertyFetch occurrences="8">
+      <code>$this-&gt;email</code>
+      <code>$this-&gt;first_name</code>
+      <code>$this-&gt;first_name</code>
+      <code>$this-&gt;last_name</code>
+      <code>$this-&gt;public_email</code>
+      <code>$this-&gt;role</code>
+      <code>$this-&gt;twitter</code>
+      <code>$this-&gt;website</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="app/Models/Product.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$purchasable-&gt;requires_license</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Models/Purchasable.php">
+    <InvalidPropertyAssignmentValue occurrences="1">
+      <code>$roundedPriceInCents</code>
+    </InvalidPropertyAssignmentValue>
+    <InvalidReturnStatement occurrences="1">
+      <code>static::query()-&gt;firstWhere('paddle_product_id', $paddleProductId)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>?self</code>
+    </InvalidReturnType>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$user-&gt;next_purchase_discount_period_ends_at</code>
+    </UndefinedMagicPropertyFetch>
+    <UndefinedPropertyFetch occurrences="3">
+      <code>$purchasablePrice-&gt;amount</code>
+      <code>$purchasablePrice-&gt;currency_code</code>
+      <code>$purchasablePrice-&gt;currency_symbol</code>
+    </UndefinedPropertyFetch>
+    <UndefinedThisPropertyFetch occurrences="6">
+      <code>$this-&gt;description</code>
+      <code>$this-&gt;discount_name</code>
+      <code>$this-&gt;discount_percentage</code>
+      <code>$this-&gt;discount_percentage</code>
+      <code>$this-&gt;price_in_usd_cents</code>
+      <code>$this-&gt;product_id</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="app/Models/Purchase.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>$license</code>
+    </InvalidReturnStatement>
+    <UndefinedMagicPropertyFetch occurrences="2">
+      <code>$product-&gt;id</code>
+      <code>$user-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+    <UndefinedThisPropertyFetch occurrences="1">
+      <code>$this-&gt;passthrough</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="app/Models/Referrer.php">
+    <InvalidNullableReturnType occurrences="1">
+      <code>int</code>
+    </InvalidNullableReturnType>
+    <NullableReturnStatement occurrences="2">
+      <code>$this-&gt;discount_percentage</code>
+      <code>$this-&gt;discount_percentage</code>
+    </NullableReturnStatement>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$purchasable-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Models/Repository.php">
+    <UndefinedThisPropertyAssignment occurrences="1">
+      <code>$this-&gt;topics</code>
+    </UndefinedThisPropertyAssignment>
+    <UndefinedThisPropertyFetch occurrences="4">
+      <code>$this-&gt;name</code>
+      <code>$this-&gt;name</code>
+      <code>$this-&gt;name</code>
+      <code>$this-&gt;name</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="app/Models/User.php">
+    <InvalidReturnStatement occurrences="3">
+      <code>$this-&gt;hasMany(Purchase::class)-&gt;with('purchasable.product')</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="3">
+      <code>HasMany</code>
+      <code>HasMany</code>
+      <code>HasMany</code>
+    </InvalidReturnType>
+    <InvalidScalarArgument occurrences="1">
+      <code>$paddleProductId</code>
+    </InvalidScalarArgument>
+    <UndefinedMagicPropertyFetch occurrences="2">
+      <code>$license-&gt;id</code>
+      <code>$purchasable-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+    <UndefinedThisPropertyFetch occurrences="5">
+      <code>$this-&gt;email</code>
+      <code>$this-&gt;github_username</code>
+      <code>$this-&gt;has_access_to_unreleased_products</code>
+      <code>$this-&gt;is_sponsor</code>
+      <code>$this-&gt;next_purchase_discount_period_ends_at</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="app/Models/Video.php">
+    <UndefinedMagicPropertyAssignment occurrences="3">
+      <code>$video-&gt;runtime</code>
+      <code>$video-&gt;slug</code>
+      <code>$video-&gt;title</code>
+    </UndefinedMagicPropertyAssignment>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$video-&gt;title</code>
+    </UndefinedMagicPropertyFetch>
+    <UndefinedThisPropertyFetch occurrences="7">
+      <code>$this-&gt;chapter</code>
+      <code>$this-&gt;description</code>
+      <code>$this-&gt;display</code>
+      <code>$this-&gt;id</code>
+      <code>$this-&gt;id</code>
+      <code>$this-&gt;series_id</code>
+      <code>$this-&gt;vimeo_id</code>
+    </UndefinedThisPropertyFetch>
+  </file>
+  <file src="app/Notifications/LicenseIsAboutToExpireNotification.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$this-&gt;license-&gt;expires_at</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Providers/AuthServiceProvider.php">
+    <UndefinedMagicMethod occurrences="1">
+      <code>increment</code>
+    </UndefinedMagicMethod>
+  </file>
+  <file src="app/Rules/MatchingLicense.php">
+    <ParamNameMismatch occurrences="1">
+      <code>$licenseKey</code>
+    </ParamNameMismatch>
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>$this-&gt;activation-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="app/Support/MediaLibrary/FileSizeOptimizedWidthCalculator.php">
+    <InvalidReturnType occurrences="1">
+      <code>Collection</code>
+    </InvalidReturnType>
+  </file>
+  <file src="app/Support/ValueStores/UpdatedRepositoriesValueStore.php">
+    <InvalidArgument occurrences="1">
+      <code>array_unique($updatedRepositoryNames)</code>
+    </InvalidArgument>
+  </file>
+  <file src="app/View/Components/Button.php">
+    <ImplicitToStringCast occurrences="1">
+      <code>render</code>
+    </ImplicitToStringCast>
+  </file>
+  <file src="app/View/Components/Field.php">
+    <ImplicitToStringCast occurrences="1">
+      <code>render</code>
+    </ImplicitToStringCast>
+  </file>
+  <file src="app/View/Components/Label.php">
+    <ImplicitToStringCast occurrences="1">
+      <code>render</code>
+    </ImplicitToStringCast>
+  </file>
+  <file src="app/helpers.php">
+    <InvalidArrayOffset occurrences="1">
+      <code>$suffixes[floor($base)]</code>
+    </InvalidArrayOffset>
+  </file>
+  <file src="database/factories/PurchaseFactory.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>Receipt::make()-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="database/factories/ReceiptFactory.php">
+    <RedundantCast occurrences="1">
+      <code>(int)1</code>
+    </RedundantCast>
+  </file>
+  <file src="database/seeders/ProductSeeder.php">
+    <UndefinedMagicPropertyFetch occurrences="6">
+      <code>$beyondCrud-&gt;id</code>
+      <code>$mailCoach-&gt;id</code>
+      <code>$mailCoachSingleDomainRenewal-&gt;id</code>
+      <code>$mailCoachUnlimitedDomainsRenewal-&gt;id</code>
+      <code>$ray-&gt;id</code>
+      <code>$rayRenewalPurchasable-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="database/seeders/RepositoriesSeeder.php">
+    <UndefinedMagicPropertyFetch occurrences="1">
+      <code>Ad::all()-&gt;random()-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="database/seeders/UserSeeder.php">
+    <UndefinedMagicPropertyFetch occurrences="5">
+      <code>$purchase-&gt;id</code>
+      <code>$purchase-&gt;id</code>
+      <code>$purchase-&gt;requires_license</code>
+      <code>$user-&gt;id</code>
+      <code>$user-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+  <file src="database/seeders/VideoSeeder.php">
+    <UndefinedMagicPropertyFetch occurrences="2">
+      <code>$courseWithFreeSamples-&gt;id</code>
+      <code>$seriesWithFreeVideosAndSponsoredVideos-&gt;id</code>
+    </UndefinedMagicPropertyFetch>
+  </file>
+</files>
