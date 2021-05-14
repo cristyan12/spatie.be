@@ -14,4 +14,16 @@
             <directory name="vendor"/>
         </ignoreFiles>
     </projectFiles>
-<plugins><pluginClass class="Psalm\LaravelPlugin\Plugin"/></plugins></psalm>
+
+    <issueHandlers>
+        <!--
+            Suppressed because Laravel models provide magic properties,
+            and we want those to be available on model interfaces via @property doc blocks
+        -->
+        <NoInterfaceProperties errorLevel="suppress" />
+    </issueHandlers>
+
+    <plugins>
+        <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+    </plugins>
+</psalm>
